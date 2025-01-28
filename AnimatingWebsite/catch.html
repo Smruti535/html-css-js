@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="catch.css">
+
+</head>
+<body>
+    <h1>CATCH THE BUTTERFLY!</h1>
+    <div id="box">
+        <div id="butterfly">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMEoOcZ7jVQmI56yY9mCDEWhEKFV8X8VfvLHPgPanEioNtEEteyEs0ao8mDH4NaQ8Xzd4&usqp=CAU">
+
+        </div>
+    </div>
+    <script>
+        var image = document.querySelector("#butterfly")
+        image.addEventListener("mouseover", function(){
+            this.style.left = 100+Math.random()*(700 - 200) + "px"
+            this.style.top = 100+Math.random()*(500 - 200) + "px"
+        })
+        image.addEventListener("click", function(dets){
+            this.style.scale= 0
+        })
+    </script>
+</body>
+</html>

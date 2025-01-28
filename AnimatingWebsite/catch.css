@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#box{
+    height: 500px;
+    width: 700px;
+    background-color: aquamarine;
+    position: relative;
+    margin: 50px;
+    padding: 10px;
+}
+#butterfly{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    background-color: rebeccapurple;
+    transform: translate(-50%, -50%) scale(1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+img{
+    object-fit: cover;
+    height: 50px;
+    position: fixed;
+}
